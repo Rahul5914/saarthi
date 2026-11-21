@@ -26,3 +26,20 @@ Files
 Results in this folder were measured on an x86 development machine pinned to 2 cores.
 To do on the Pi: repeat all of these runs there. The same commands work on a Raspberry Pi 4
 (64-bit OS). Then fine-tune the model and swap the GGUF file.
+
+## Measured results
+
+ARM64 cloud machine (Neoverse-N2), cgroup limited to 2 cores and 2 GB. Raw output is in `results/arm64/`.
+
+| Measurement | Result |
+|---|---|
+| Six weeks of 10 Hz history, 24 signals | 139 MB raw, 12 MB summaries |
+| Fast path (router + tool + answer) | 3 ms median, 29 ms worst |
+| Model path (base Qwen2.5-0.5B, not fine-tuned) | 0.55 s median, 0.75 s worst |
+| Peak memory with model loaded | 958 MB |
+| 59 in-scope questions, router + base model | 57 correct (48 on the fast path) |
+| Base model alone | 29 of 59, which is why fine-tuning is next |
+| Top cause on injected faults | 48 of 50 runs |
+| CAN intrusion detector, synthetic traffic | F1 0.99 |
+
+These cores are faster than a Raspberry Pi 4. The Pi run is still to be done.
