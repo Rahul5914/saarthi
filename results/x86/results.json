@@ -1,0 +1,129 @@
+{
+ "router": {
+  "n_in_scope": 59,
+  "fast_path_share": 0.8135593220338984,
+  "fast_correct": 48,
+  "fast_total": 48,
+  "fast_wrong": 0,
+  "deferred_to_model": 11,
+  "wrongly_refused": 0,
+  "n_out_of_scope": 10,
+  "oos_answered_by_tool": 0,
+  "oos_refused": 8,
+  "oos_to_model": 2,
+  "fast_ms_median": 4.551683500039871,
+  "fast_ms_p95": 44.96834429997989,
+  "fast_ms_max": 61.02560399995127
+ },
+ "router_train_examples": 602,
+ "boot_s": 0.27,
+ "tool_latency_ms": {
+  "explain (range, 14 d)": [
+   6.1,
+   8.7
+  ],
+  "largest_change (efficiency, 6 wk)": [
+   1.5,
+   2.7
+  ],
+  "events (ADAS, yesterday)": [
+   0.9,
+   1.1
+  ],
+  "before_event (overheat, raw 10 Hz)": [
+   24.5,
+   61.1
+  ],
+  "compare (city vs highway)": [
+   1.8,
+   3.2
+  ],
+  "trend (battery temp, 30 d)": [
+   3.0,
+   4.0
+  ],
+  "anomalies (7 d)": [
+   47.4,
+   59.2
+  ]
+ },
+ "explain_top_cause": {
+  "correct": 48,
+  "total": 50,
+  "detail": [
+   [
+    "heat",
+    [
+     0.5
+    ],
+    5
+   ],
+   [
+    "heat",
+    [
+     1.0
+    ],
+    5
+   ],
+   [
+    "tyre",
+    [
+     0.6
+    ],
+    5
+   ],
+   [
+    "tyre",
+    [
+     1.0
+    ],
+    5
+   ],
+   [
+    "highway",
+    [
+     0.5
+    ],
+    3
+   ],
+   [
+    "highway",
+    [
+     1.0
+    ],
+    5
+   ],
+   [
+    "harsh",
+    [
+     0.5
+    ],
+    5
+   ],
+   [
+    "harsh",
+    [
+     1.0
+    ],
+    5
+   ],
+   [
+    "heat+tyre",
+    [
+     1.0,
+     0.4
+    ],
+    5
+   ],
+   [
+    "tyre+harsh",
+    [
+     1.0,
+     0.3
+    ],
+    5
+   ]
+  ]
+ },
+ "peak_rss_mb": 278.0
+}

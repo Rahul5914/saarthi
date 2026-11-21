@@ -1,0 +1,6 @@
+duckdb
+numpy
+pandas
+pyarrow
+scikit-learn
+llama-cpp-python

@@ -1,0 +1,7 @@
+store/
+veh.duckdb
+__pycache__/
+*.gguf
+/results.json
+/ids_results.json
+/model_results.json

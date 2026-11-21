@@ -1,0 +1,42 @@
+name: ARM64 benchmark (2 cores, 2 GB)
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['results/**', 'README.md']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bench:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Machine
+        run: |
+          mkdir -p results/arm64
+          { uname -m; lscpu | grep -E 'Architecture|Model name|Vendor|^CPU\(s\)|BogoMIPS'; free -m | head -2; } | tee results/arm64/machine.txt
+      - name: Install
+        run: pip install -r requirements.txt
+      - name: Model
+        run: curl -sSL -o model.gguf https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf && ls -la model.gguf
+      - name: Generate six weeks of history
+        run: python3 gen_history.py | tee results/arm64/gen.txt
+      - name: Run everything under a 2 core, 2 GB cgroup
+        run: |
+          PY=$(which python3)
+          run() { sudo systemd-run --scope --quiet -p MemoryMax=2G -p MemorySwapMax=0 -p AllowedCPUs=0-1 --uid=$(id -u) --gid=$(id -g) --setenv=HOME=$HOME "$@"; }
+          if run $PY -c "import os;print('cgroup ok, cpus', sorted(os.sched_getaffinity(0)))" | tee results/arm64/limit.txt; then L=run; else echo "cgroup unavailable, taskset only" | tee results/arm64/limit.txt; L="taskset -c 0,1"; fi
+          $L $PY evaluate.py | tee results/arm64/evaluate.txt
+          $L $PY can_ids.py | tee results/arm64/can_ids.txt
+          $L $PY model_path.py model.gguf | tee results/arm64/model_path.txt
+          cp results.json ids_results.json model_results.json results/arm64/
+      - name: Save results to the repository
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results/arm64 && git commit -m "ARM64 benchmark results" && git push || echo "nothing to save"
