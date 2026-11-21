@@ -5,4 +5,4 @@ Vendor ID:                               ARM
 Model name:                              Neoverse-N2
 BogoMIPS:                                2000.00
                total        used        free      shared  buff/cache   available
-Mem:           15941        1159       13794          40        1259       14782
+Mem:           15941        1159       13798          41        1256       14782

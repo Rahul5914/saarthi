@@ -1,9 +1,9 @@
 {
  "model": "Qwen2.5-0.5B-Instruct Q4_K_M, base (no fine-tune), 12-shot prompt, grammar-constrained",
  "threads": 2,
- "load_s": 0.35,
+ "load_s": 0.38,
  "prefix_tokens": 736,
- "prefix_eval_s_once": 8.34,
+ "prefix_eval_s_once": 8.4,
  "in_scope": 59,
  "tool_correct": 29,
  "full_correct": 29,
@@ -11,13 +11,13 @@
  "deferred_full_correct": 8,
  "oos": 10,
  "oos_refused": 7,
- "latency_s_median": 0.554,
- "latency_s_p95": 0.701,
- "latency_s_max": 0.752,
+ "latency_s_median": 0.561,
+ "latency_s_p95": 0.726,
+ "latency_s_max": 0.761,
  "out_tokens_mean": 5.5,
  "q_tokens_mean": 18.3,
- "tokens_per_s_overall": 43.1,
- "peak_rss_mb": 958.5
+ "tokens_per_s_overall": 42.4,
+ "peak_rss_mb": 959.6
 }
 MISS want=explain/energy_per_km got=trend/batt_temp_c router=True | What's eating my battery faster than before?
 MISS want=largest_change/energy_per_km got=explain/energy_per_km router=True | On what date did the range fall the most?

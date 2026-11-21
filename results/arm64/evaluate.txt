@@ -11,28 +11,28 @@
   "oos_answered_by_tool": 0,
   "oos_refused": 8,
   "oos_to_model": 2,
-  "fast_ms_median": 3.0192505000172787,
-  "fast_ms_p95": 28.838042049972046,
-  "fast_ms_max": 29.263514000035684
+  "fast_ms_median": 3.146341000004327,
+  "fast_ms_p95": 29.12361950000104,
+  "fast_ms_max": 29.6243269999934
  },
  "router_train_examples": 602,
- "boot_s": 0.2,
+ "boot_s": 0.21,
  "tool_latency_ms": {
   "explain (range, 14 d)": [
-   4.8,
-   4.9
+   5.0,
+   5.2
   ],
   "largest_change (efficiency, 6 wk)": [
    1.0,
-   1.0
+   1.2
   ],
   "events (ADAS, yesterday)": [
    0.8,
    0.8
   ],
   "before_event (overheat, raw 10 Hz)": [
-   21.2,
-   22.2
+   22.2,
+   23.4
   ],
   "compare (city vs highway)": [
    1.1,
@@ -40,11 +40,11 @@
   ],
   "trend (battery temp, 30 d)": [
    2.1,
-   2.1
+   2.2
   ],
   "anomalies (7 d)": [
-   26.8,
-   27.8
+   26.9,
+   28.8
   ]
  },
  "explain_top_cause": {
@@ -125,7 +125,7 @@
    ]
   ]
  },
- "peak_rss_mb": 298.6
+ "peak_rss_mb": 301.8
 }
                                                                 q            want    got      conf
 1   My car is giving much less range these days, what's going on?         explain  model  0.451267

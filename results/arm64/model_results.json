@@ -2,9 +2,9 @@
  "summary": {
   "model": "Qwen2.5-0.5B-Instruct Q4_K_M, base (no fine-tune), 12-shot prompt, grammar-constrained",
   "threads": 2,
-  "load_s": 0.35,
+  "load_s": 0.38,
   "prefix_tokens": 736,
-  "prefix_eval_s_once": 8.34,
+  "prefix_eval_s_once": 8.4,
   "in_scope": 59,
   "tool_correct": 29,
   "full_correct": 29,
@@ -12,13 +12,13 @@
   "deferred_full_correct": 8,
   "oos": 10,
   "oos_refused": 7,
-  "latency_s_median": 0.554,
-  "latency_s_p95": 0.701,
-  "latency_s_max": 0.752,
+  "latency_s_median": 0.561,
+  "latency_s_p95": 0.726,
+  "latency_s_max": 0.761,
   "out_tokens_mean": 5.5,
   "q_tokens_mean": 18.3,
-  "tokens_per_s_overall": 43.1,
-  "peak_rss_mb": 958.5
+  "tokens_per_s_overall": 42.4,
+  "peak_rss_mb": 959.6
  },
  "rows": [
   {
@@ -29,7 +29,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5977871680000817,
+   "s": 0.7259410770000159,
    "out_tokens": 5,
    "q_tokens": 20,
    "router_handled": true
@@ -42,7 +42,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6123993520000113,
+   "s": 0.6295031669999958,
    "out_tokens": 5,
    "q_tokens": 23,
    "router_handled": false
@@ -55,7 +55,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6039173370000981,
+   "s": 0.6123189439999805,
    "out_tokens": 5,
    "q_tokens": 22,
    "router_handled": true
@@ -68,7 +68,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6329437480000024,
+   "s": 0.639730233999984,
    "out_tokens": 5,
    "q_tokens": 24,
    "router_handled": false
@@ -81,7 +81,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.694807419999961,
+   "s": 0.7073950809999872,
    "out_tokens": 9,
    "q_tokens": 17,
    "router_handled": true
@@ -94,7 +94,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5359468669998932,
+   "s": 0.5414703879999934,
    "out_tokens": 5,
    "q_tokens": 18,
    "router_handled": false
@@ -107,7 +107,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6831695590000209,
+   "s": 0.6920587529999978,
    "out_tokens": 5,
    "q_tokens": 27,
    "router_handled": false
@@ -120,7 +120,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.49304935200007094,
+   "s": 0.5003258459999813,
    "out_tokens": 5,
    "q_tokens": 16,
    "router_handled": true
@@ -133,7 +133,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.543515071999991,
+   "s": 0.5504647060000138,
    "out_tokens": 5,
    "q_tokens": 19,
    "router_handled": true
@@ -146,7 +146,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5434876460000169,
+   "s": 0.5504138619999992,
    "out_tokens": 5,
    "q_tokens": 19,
    "router_handled": false
@@ -159,7 +159,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6012184549999802,
+   "s": 0.6122700340000051,
    "out_tokens": 7,
    "q_tokens": 17,
    "router_handled": true
@@ -172,7 +172,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6014850249999881,
+   "s": 0.6106415809999817,
    "out_tokens": 7,
    "q_tokens": 17,
    "router_handled": true
@@ -185,7 +185,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5317002780000166,
+   "s": 0.539678275,
    "out_tokens": 5,
    "q_tokens": 18,
    "router_handled": true
@@ -198,7 +198,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5832265050000842,
+   "s": 0.5880067889999907,
    "out_tokens": 5,
    "q_tokens": 21,
    "router_handled": true
@@ -211,7 +211,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.6513544450000381,
+   "s": 0.6650118210000073,
    "out_tokens": 8,
    "q_tokens": 17,
    "router_handled": true
@@ -224,7 +224,7 @@
    "got_arg": "tyre_bar",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.585624376999931,
+   "s": 0.5938477729999931,
    "out_tokens": 6,
    "q_tokens": 19,
    "router_handled": true
@@ -237,7 +237,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5323211549999769,
+   "s": 0.537436869000004,
    "out_tokens": 5,
    "q_tokens": 18,
    "router_handled": true
@@ -250,7 +250,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6364177399999562,
+   "s": 0.6464332730000137,
    "out_tokens": 7,
    "q_tokens": 19,
    "router_handled": false
@@ -263,7 +263,7 @@
    "got_arg": "adas_disengage",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5872561789999509,
+   "s": 0.5922587520000206,
    "out_tokens": 6,
    "q_tokens": 19,
    "router_handled": true
@@ -276,7 +276,7 @@
    "got_arg": "harsh_brake",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5330980799999452,
+   "s": 0.5371801890000256,
    "out_tokens": 5,
    "q_tokens": 18,
    "router_handled": true
@@ -289,7 +289,7 @@
    "got_arg": "adas_disengage",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5865124499999865,
+   "s": 0.5915759210000147,
    "out_tokens": 6,
    "q_tokens": 19,
    "router_handled": true
@@ -302,7 +302,7 @@
    "got_arg": "harsh_brake",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6296651879999899,
+   "s": 0.6363350139999966,
    "out_tokens": 7,
    "q_tokens": 19,
    "router_handled": true
@@ -315,7 +315,7 @@
    "got_arg": "adas_disengage",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5854010099999414,
+   "s": 0.5947154570000066,
    "out_tokens": 6,
    "q_tokens": 19,
    "router_handled": false
@@ -328,7 +328,7 @@
    "got_arg": "harsh_brake",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5821895929999528,
+   "s": 0.5895108559999471,
    "out_tokens": 5,
    "q_tokens": 21,
    "router_handled": true
@@ -341,7 +341,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.7183758280000347,
+   "s": 0.7329349660000162,
    "out_tokens": 9,
    "q_tokens": 18,
    "router_handled": true
@@ -354,7 +354,7 @@
    "got_arg": "adas_disengage",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5549841600000036,
+   "s": 0.5639217309999935,
    "out_tokens": 6,
    "q_tokens": 17,
    "router_handled": true
@@ -367,7 +367,7 @@
    "got_arg": "harsh_brake",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5332317959999955,
+   "s": 0.536815364000006,
    "out_tokens": 5,
    "q_tokens": 18,
    "router_handled": true
@@ -380,7 +380,7 @@
    "got_arg": "battery_overheat",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.4914277719999518,
+   "s": 0.4988005320000184,
    "out_tokens": 5,
    "q_tokens": 17,
    "router_handled": true
@@ -393,7 +393,7 @@
    "got_arg": "battery_overheat",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5439454289999048,
+   "s": 0.549698525999986,
    "out_tokens": 5,
    "q_tokens": 21,
    "router_handled": true
@@ -406,7 +406,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.6246237810000821,
+   "s": 0.6344038579999847,
    "out_tokens": 6,
    "q_tokens": 22,
    "router_handled": true
@@ -419,7 +419,7 @@
    "got_arg": "adas_disengage",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.6038746180000771,
+   "s": 0.6116378560000157,
    "out_tokens": 6,
    "q_tokens": 21,
    "router_handled": true
@@ -432,7 +432,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.6927321110000548,
+   "s": 0.7011344059999942,
    "out_tokens": 9,
    "q_tokens": 19,
    "router_handled": true
@@ -445,7 +445,7 @@
    "got_arg": "battery_overheat",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.6043509689999382,
+   "s": 0.6132182070000454,
    "out_tokens": 6,
    "q_tokens": 21,
    "router_handled": true
@@ -458,7 +458,7 @@
    "got_arg": "harsh_brake",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.45406847300000663,
+   "s": 0.4584199250000438,
    "out_tokens": 5,
    "q_tokens": 15,
    "router_handled": true
@@ -471,7 +471,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.49311146499996994,
+   "s": 0.5001268020000111,
    "out_tokens": 5,
    "q_tokens": 17,
    "router_handled": true
@@ -484,7 +484,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.49232937099998253,
+   "s": 0.4990718999999899,
    "out_tokens": 5,
    "q_tokens": 17,
    "router_handled": true
@@ -497,7 +497,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5624294520000603,
+   "s": 0.5699866869999823,
    "out_tokens": 5,
    "q_tokens": 21,
    "router_handled": true
@@ -510,7 +510,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5224096790000203,
+   "s": 0.5300329259999899,
    "out_tokens": 5,
    "q_tokens": 19,
    "router_handled": true
@@ -523,7 +523,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5438125390001005,
+   "s": 0.5519486590000042,
    "out_tokens": 5,
    "q_tokens": 20,
    "router_handled": true
@@ -536,7 +536,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5540952320000088,
+   "s": 0.5610787159999973,
    "out_tokens": 6,
    "q_tokens": 18,
    "router_handled": true
@@ -549,7 +549,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5832529049999948,
+   "s": 0.587685936000014,
    "out_tokens": 5,
    "q_tokens": 22,
    "router_handled": true
@@ -562,7 +562,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.4922819049999134,
+   "s": 0.4979955189999714,
    "out_tokens": 5,
    "q_tokens": 17,
    "router_handled": true
@@ -575,7 +575,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5229429229999596,
+   "s": 0.5283502620000036,
    "out_tokens": 5,
    "q_tokens": 19,
    "router_handled": true
@@ -588,7 +588,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5145966630000203,
+   "s": 0.5197525829999563,
    "out_tokens": 6,
    "q_tokens": 16,
    "router_handled": true
@@ -601,7 +601,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.45329523600003085,
+   "s": 0.46096037099999876,
    "out_tokens": 5,
    "q_tokens": 15,
    "router_handled": true
@@ -614,7 +614,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.7013154199999008,
+   "s": 0.7085316390000003,
    "out_tokens": 5,
    "q_tokens": 29,
    "router_handled": true
@@ -627,7 +627,7 @@
    "got_arg": "hvac_kw",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.7519812519999505,
+   "s": 0.7611171109999759,
    "out_tokens": 9,
    "q_tokens": 22,
    "router_handled": true
@@ -640,7 +640,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.7275617239999974,
+   "s": 0.7308507379999583,
    "out_tokens": 9,
    "q_tokens": 19,
    "router_handled": true
@@ -653,7 +653,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5396450110000615,
+   "s": 0.5564535589999764,
    "out_tokens": 5,
    "q_tokens": 19,
    "router_handled": false
@@ -666,7 +666,7 @@
    "got_arg": "tyre_bar",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.6202479359999415,
+   "s": 0.6229064519999952,
    "out_tokens": 8,
    "q_tokens": 15,
    "router_handled": false
@@ -679,7 +679,7 @@
    "got_arg": "amb_temp_c",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5562946689999535,
+   "s": 0.5701333590000104,
    "out_tokens": 6,
    "q_tokens": 17,
    "router_handled": true
@@ -692,7 +692,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.5156622909998987,
+   "s": 0.52308857700001,
    "out_tokens": 6,
    "q_tokens": 15,
    "router_handled": true
@@ -705,7 +705,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.516411398999935,
+   "s": 0.524026326000012,
    "out_tokens": 6,
    "q_tokens": 15,
    "router_handled": true
@@ -718,7 +718,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.6328651589999481,
+   "s": 0.6409418200000232,
    "out_tokens": 5,
    "q_tokens": 24,
    "router_handled": true
@@ -731,7 +731,7 @@
    "got_arg": "batt_temp_c",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.7006358429999864,
+   "s": 0.7146606839999663,
    "out_tokens": 8,
    "q_tokens": 20,
    "router_handled": true
@@ -744,7 +744,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.4924117179999712,
+   "s": 0.5079093830000261,
    "out_tokens": 5,
    "q_tokens": 16,
    "router_handled": true
@@ -757,7 +757,7 @@
    "got_arg": "-",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.41236459100002776,
+   "s": 0.4092954500000019,
    "out_tokens": 3,
    "q_tokens": 16,
    "router_handled": true
@@ -770,7 +770,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.671890564000023,
+   "s": 0.6823317729999872,
    "out_tokens": 5,
    "q_tokens": 26,
    "router_handled": true
@@ -783,7 +783,7 @@
    "got_arg": "battery_overheat",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5124265279999918,
+   "s": 0.5190197779999721,
    "out_tokens": 5,
    "q_tokens": 17,
    "router_handled": true
@@ -796,7 +796,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.3527153929999258,
+   "s": 0.3622751449999555,
    "out_tokens": 3,
    "q_tokens": 13,
    "router_handled": true
@@ -809,7 +809,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.37295562899998913,
+   "s": 0.3827418429999625,
    "out_tokens": 3,
    "q_tokens": 14,
    "router_handled": true
@@ -822,7 +822,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.47169041500001185,
+   "s": 0.486625623000009,
    "out_tokens": 5,
    "q_tokens": 15,
    "router_handled": true
@@ -835,7 +835,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.33414800900004593,
+   "s": 0.3426196940000068,
    "out_tokens": 3,
    "q_tokens": 12,
    "router_handled": true
@@ -848,7 +848,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.44182181999997283,
+   "s": 0.4501771699999608,
    "out_tokens": 5,
    "q_tokens": 13,
    "router_handled": false
@@ -861,7 +861,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.4040553090000003,
+   "s": 0.40945024899997406,
    "out_tokens": 3,
    "q_tokens": 16,
    "router_handled": true
@@ -874,7 +874,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.3153328999999303,
+   "s": 0.323017311000001,
    "out_tokens": 3,
    "q_tokens": 11,
    "router_handled": true
@@ -887,7 +887,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.37315124500003094,
+   "s": 0.38290624899997283,
    "out_tokens": 3,
    "q_tokens": 14,
    "router_handled": false
@@ -900,7 +900,7 @@
    "got_arg": "energy_per_km",
    "ok_tool": false,
    "ok_full": false,
-   "s": 0.5796943260000944,
+   "s": 0.6040628820000506,
    "out_tokens": 8,
    "q_tokens": 13,
    "router_handled": true
@@ -913,7 +913,7 @@
    "got_arg": "-",
    "ok_tool": true,
    "ok_full": true,
-   "s": 0.37357994000001327,
+   "s": 0.38617408999999725,
    "out_tokens": 3,
    "q_tokens": 14,
    "router_handled": true

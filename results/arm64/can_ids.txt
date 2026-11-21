@@ -1,1 +1,1 @@
-{"train_windows": 3000, "test_windows": 2999, "attack_share_test": 0.361, "precision": 1.0, "recall": 0.9991, "f1": 0.9995, "false_alarms": 0, "missed": 1, "microsec_per_window": 0.7}
+{"train_windows": 3000, "test_windows": 2999, "attack_share_test": 0.361, "precision": 1.0, "recall": 0.9991, "f1": 0.9995, "false_alarms": 0, "missed": 1, "microsec_per_window": 0.8}
