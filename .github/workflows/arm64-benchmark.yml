@@ -37,6 +37,6 @@ jobs:
       - name: Save results to the repository
         if: always()
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "Rahul Kumar"
+          git config user.email "Rahul5914@users.noreply.github.com"
           git add results/arm64 && git commit -m "ARM64 benchmark results" && git push || echo "nothing to save"
