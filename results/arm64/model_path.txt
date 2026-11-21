@@ -1,0 +1,54 @@
+{
+ "model": "Qwen2.5-0.5B-Instruct Q4_K_M, base (no fine-tune), 12-shot prompt, grammar-constrained",
+ "threads": 2,
+ "load_s": 0.35,
+ "prefix_tokens": 736,
+ "prefix_eval_s_once": 8.34,
+ "in_scope": 59,
+ "tool_correct": 29,
+ "full_correct": 29,
+ "deferred_n": 9,
+ "deferred_full_correct": 8,
+ "oos": 10,
+ "oos_refused": 7,
+ "latency_s_median": 0.554,
+ "latency_s_p95": 0.701,
+ "latency_s_max": 0.752,
+ "out_tokens_mean": 5.5,
+ "q_tokens_mean": 18.3,
+ "tokens_per_s_overall": 43.1,
+ "peak_rss_mb": 958.5
+}
+MISS want=explain/energy_per_km got=trend/batt_temp_c router=True | What's eating my battery faster than before?
+MISS want=largest_change/energy_per_km got=explain/energy_per_km router=True | On what date did the range fall the most?
+MISS want=largest_change/energy_per_km got=explain/energy_per_km router=True | sabse zyada efficiency kis din giri?
+MISS want=largest_change/batt_temp_c got=trend/batt_temp_c router=True | Find the biggest single-day jump in battery temperature
+MISS want=largest_change/energy_per_km got=explain/energy_per_km router=True | range mein sabse bada drop kab aaya tha
+MISS want=events/adas_disengage got=explain/adas_disengage router=True | kal ADAS kitni baar band hua?
+MISS want=events/battery_overheat got=trend/batt_temp_c router=True | Were there overheating warnings in the past month?
+MISS want=before_event/battery_overheat got=events/battery_overheat router=True | What happened before the battery overheating warning?
+MISS want=before_event/battery_overheat got=events/battery_overheat router=True | What was the car doing right before the thermal warning came on?
+MISS want=before_event/battery_overheat got=trend/batt_temp_c router=True | battery garam hone se pehle kya hua tha?
+MISS want=before_event/adas_disengage got=events/adas_disengage router=True | Show me the lead-up to the last ADAS disengagement
+MISS want=before_event/battery_overheat got=trend/batt_temp_c router=True | What changed in the minutes before the overheat alert?
+MISS want=before_event/battery_overheat got=trend/battery_overheat router=True | overheating warning se pehle ke signals dikhao
+MISS want=before_event/harsh_brake got=events/harsh_brake router=True | What preceded the last hard brake?
+MISS want=before_event/battery_overheat got=explain/energy_per_km router=True | Walk me through what led to the battery warning
+MISS want=compare/energy_per_km got=explain/energy_per_km router=True | Is my car more efficient in the city or on the highway?
+MISS want=compare/energy_per_km got=explain/energy_per_km router=True | city aur highway mein mileage ka kitna fark hai?
+MISS want=compare/batt_temp_c got=trend/batt_temp_c router=True | How does battery temperature differ between city and highway?
+MISS want=compare/energy_per_km got=explain/energy_per_km router=True | shehar mein zyada consumption hota hai ya highway par?
+MISS want=compare/energy_per_km got=explain/energy_per_km router=True | Give me a city vs highway breakdown of range
+MISS want=compare/energy_per_km got=explain/energy_per_km router=True | Which is harder on efficiency, highway or city trips?
+MISS want=trend/tyre_bar got=explain/energy_per_km router=True | Is my tyre pressure going down?
+MISS want=trend/tyre_bar got=explain/energy_per_km router=True | tyre ki hawa pichhle 2 hafte mein kaisi rahi?
+MISS want=trend/energy_per_km got=explain/energy_per_km router=False | Has efficiency been getting better or worse over six weeks?
+MISS want=anomalies/None got=explain/energy_per_km router=True | pichhle hafte kuch gadbad dikhi kya?
+MISS want=anomalies/batt_temp_c got=trend/batt_temp_c router=True | Any odd battery temperature readings in the last 7 days?
+MISS want=anomalies/None got=explain/energy_per_km router=True | Was everything normal on my last drive?
+MISS want=anomalies/None got=none/- router=True | Flag anything weird from the past two weeks
+MISS want=anomalies/None got=explain/energy_per_km router=True | gaadi mein kuch ajeeb to nahi hua is hafte?
+MISS want=anomalies/None got=explain/battery_overheat router=True | Check for strange behaviour in the battery this month
+MISS want=none/None got=explain/energy_per_km router=True | What's the capital of France?
+MISS want=none/None got=explain/energy_per_km router=False | AC chalu kar do
+MISS want=none/None got=trend/energy_per_km router=True | Write a poem about cars

@@ -1,0 +1,1 @@
+rows=2268000 days=42 signals=24 raw_parquet_MB=138.6 summary_db_MB=11.5
